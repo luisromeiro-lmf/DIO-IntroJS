@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Aula intro JS</title> 
+        <meta charset="utf-8">
+        <!-- carregamos os comando JS a partir de outro arquivo -->
+        <script type="text/javascript" src="./js/main.js"></script>
+    </head>
+    <body onload="load()">
+        <!-- Nesse caso o script, que carrega o JS está dentro do body, misturado com o html.
+             Também é possível "linkalo" no head, como fazemos com CSS e fizemos neste exemplo.
+        <script>
+            alert("Meu primeiro JS"); /* Alerta pop-up no browser ao carregar a página */
+        </script> -->
+        <h1>Aula intro JS</h1>
+        <button type="button" onclick="clicou()">Clique arqui</button>
+        <p id="agradecimento" onclick="redirecionar()"></p>
+        <p onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+        <p onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+        <p onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+        <!--<p id="mousemove" onmouseover="trocar()" onmouseout="voltar()">Passe o mouse aqui</p>-->
+        
+        <select onchange="funcaoChange(this)">
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+        </select>
+        
+    </body>
+</html>
